@@ -100,6 +100,15 @@ lig-double-arrow-bar = "without-notch"
 lig-single-arrow-bar = "without-notch"
 
 # ============================================================
+# LIGATIONS
+# Enables calt substitution rules for programming ligatures
+# (arrows, chains, comparisons, etc.)
+# ============================================================
+
+[buildPlans.IoskeleyMono.ligations]
+inherits = "dlig"
+
+# ============================================================
 # WEIGHTS
 # Matching Berkeley Mono's full weight axis:
 #   100 Thin · 200 ExtraLight · 300 Light · 350 SemiLight
