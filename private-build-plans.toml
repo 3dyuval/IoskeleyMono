@@ -1,6 +1,6 @@
 [buildPlans.IoskeleyMono]
 family = "Ioskeley Mono"
-spacing = "normal"
+spacing = "term"
 serifs = "sans"
 noCvSs = true
 exportGlyphNames = false
