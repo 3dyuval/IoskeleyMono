@@ -23,26 +23,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Read Iosevka Version
-        id: iosevka-version
-        shell: bash
-        run: |
-          if [[ -f IOSEVKA_VERSION ]]; then
-            version="$(tr -d ' \t\n\r' < IOSEVKA_VERSION)"
-          fi
-          echo "version=$version" >> "$GITHUB_OUTPUT"
-
-      - name: Checkout Iosevka source (pinned)
-        if: steps.iosevka-version.outputs.version != ''
-        uses: actions/checkout@v4
-        with:
-          repository: be5invis/Iosevka
-          path: iosevka-src
-          ref: ${{ steps.iosevka-version.outputs.version }}
-          fetch-depth: 1
-
-      - name: Checkout Iosevka source (latest)
-        if: steps.iosevka-version.outputs.version == ''
+      - name: Checkout Iosevka source
         uses: actions/checkout@v4
         with:
           repository: be5invis/Iosevka
