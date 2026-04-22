@@ -3,7 +3,7 @@ family = "Ioskeley Mono"
 spacing = "term"
 serifs = "sans"
 noCvSs = true
-exportGlyphNames = false
+exportGlyphNames = true
 
 [buildPlans.IoskeleyMono.variants.design]
 one = "no-base"
