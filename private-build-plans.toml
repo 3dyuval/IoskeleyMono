@@ -168,19 +168,23 @@ css = 900
 
 # ============================================================
 # WIDTHS
-# 500 = Iosevka Custom (tall narrow)
-# 600 = Iosevka Custom Extended (wider)
+# Normal (500), SemiCondensed (456), Condensed (416)
 # ============================================================
 
-[buildPlans.IoskeleyMono.widths.Custom]
+[buildPlans.IoskeleyMono.widths.Normal]
 shape = 500
-menu = 4
+menu = 5
 css = "normal"
 
-[buildPlans.IoskeleyMono.widths.Extended]
-shape = 600
-menu = 5
-css = "expanded"
+[buildPlans.IoskeleyMono.widths.SemiCondensed]
+shape = 456
+menu = 4
+css = "semi-condensed"
+
+[buildPlans.IoskeleyMono.widths.Condensed]
+shape = 416
+menu = 3
+css = "condensed"
 
 # ============================================================
 # SLOPES
