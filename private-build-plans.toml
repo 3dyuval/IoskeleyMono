@@ -168,7 +168,8 @@ css = 900
 
 # ============================================================
 # WIDTHS
-# Normal (500), SemiCondensed (456), Condensed (416)
+# Normal (500), SemiCondensed (462), Condensed (434)
+# 434 is the minimum stable width for Iosevka
 # ============================================================
 
 [buildPlans.IoskeleyMono.widths.Normal]
@@ -177,12 +178,12 @@ menu = 5
 css = "normal"
 
 [buildPlans.IoskeleyMono.widths.SemiCondensed]
-shape = 456
+shape = 462
 menu = 4
 css = "semi-condensed"
 
 [buildPlans.IoskeleyMono.widths.Condensed]
-shape = 416
+shape = 434
 menu = 3
 css = "condensed"
 
